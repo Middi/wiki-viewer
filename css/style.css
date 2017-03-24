@@ -62,6 +62,15 @@ footer p {
   padding: 0 5px 0 0;
   color: #CF7C7A; }
 
+::-moz-selection {
+  background: #ebadac; }
+
+::selection {
+  background: #ebadac; }
+
+::-moz-selection {
+  background: #ebadac; }
+
 /*=============================================
 =                 HTML STYLES                 =
 =============================================*/

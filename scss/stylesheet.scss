@@ -83,6 +83,15 @@ footer p {font-size: 0.9em;}
 }
 
 
+// ---- Selection Color ---- //
+
+::selection {
+  background: lighten(rgba(225, 133, 131, 1.0), 10);
+}
+::-moz-selection {
+  background: lighten(rgba(225, 133, 131, 1.0), 10);
+}
+
 
 /*=============================================
 =                 HTML STYLES                 =
