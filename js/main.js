@@ -28,7 +28,7 @@ function request(search) {
 					urlWiki[i] = 'https://en.wikipedia.org/wiki/' + response.query.search[i].title;
 
 					// --- Add To Dom --- //
-					$("#results").append('<a href="https://en.wikipedia.org/wiki/' + title + '"><article class="posts"><h2>' + title[i] + '</h2><p>' + snippet[i] + '</p></article></a>');
+					$("#results").append('<a href="https://en.wikipedia.org/wiki/' + title + '"><article class="posts"><h2>' + title[i] + '</h2><p>' + snippet[i] + '...</p></article></a>');
 				}
 			}
 		},
