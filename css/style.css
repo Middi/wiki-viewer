@@ -99,9 +99,9 @@ i {
   font-size: 12px;
   color: #fc2d23; }
 
-button {
-  display: block;
-  margin: 20px auto;
+button, input[type=submit] {
+  display: inline;
+  margin: 20px 10px;
   padding: 6px 14px;
   color: #f9f9f9;
   font-weight: 200;
@@ -110,8 +110,9 @@ button {
   font-size: 18px;
   background-color: rgba(26, 33, 69, 0.2);
   -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
-  button:hover {
+  transition: all 0.6s ease;
+  cursor: pointer; }
+  button:hover, input[type=submit]:hover {
     background-color: rgba(26, 33, 69, 0.6);
     border: 1px solid #020202; }
 

@@ -11,8 +11,9 @@ function request(search) {
 		success: function (response) {
 
 			if (response.query.searchinfo.totalhits === 0) {
-
-			} else {
+$("#results").append('<article class="posts"><h2>No Results Found.</h2></article>');
+			} 
+			else {
 
 				for (var i = 0; i < response.query.search.length; i++) {
 
@@ -50,7 +51,13 @@ $("input").on("keydown", function search(e) {
 
 			$( ".moveBottom" ).addClass( "moveTop" );
 		
-	} else {}
+	} 
+	
+	else {
+
+$("#results").append('<article class="posts"><h2>Type Above To Search</h2></article>');
+
+	}
 	}
 });
 
@@ -68,6 +75,11 @@ $(".result-btn").click(function (event) {
 		request(search);
 
 			$( ".moveBottom" ).addClass( "moveTop" );
-	} else {}
+	} 
+	else {
+
+$("#results").append('<article class="posts"><h2>Type Above To Search</h2></article>');
+
+	}
 
 });
