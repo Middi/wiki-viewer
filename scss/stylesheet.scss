@@ -22,6 +22,8 @@ h1 {
 	font-size: 1.5em;
 	font-weight: 200;
 	color: #CF7C7A;
+	
+	span {color: #CF7C7A;}
 }
 
 h2 {
@@ -96,7 +98,7 @@ body {
 	margin:					  0;
 	padding-bottom: 	   36px;
 	min-height:			   100%;
-	background-color: #2A2F5D;
+	background-color: rgba(35, 43, 94, 1.0);
 }
 
 main {
