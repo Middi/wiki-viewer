@@ -25,6 +25,15 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"mi": 1,
@@ -46,6 +55,16 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/search.png": {
+		"ft": 32768,
+		"iS": 19650,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/search.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
 		}
 	},
 "hooks": [
