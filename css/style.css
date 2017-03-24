@@ -31,10 +31,13 @@ a {
   font-weight: 400;
   color: #cf7c7a;
   padding-bottom: 6px; }
+  h2:hover,
+  a:hover {
+    text-decoration: none; }
 
 h2,
 a span {
-  color: #1f1f1f;
+  color: #cf7c7a;
   font-weight: 700; }
 
 p {
@@ -67,7 +70,7 @@ footer p {
   padding-top: 14px;
   font-weight: 300; }
   footer p strong {
-    color: white; }
+    color: #f9f9f9; }
 
 a {
   font-size: 1em; }
@@ -76,13 +79,14 @@ a {
 strong {
   padding: 0;
   margin: 0;
-  color: white;
+  color: #f9f9f9;
   text-decoration: none;
   -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
+  transition: all 0.6s ease;
+  font-weight: 200; }
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 i {
   color: #1f1f1f; }
@@ -94,17 +98,17 @@ i {
 button {
   display: block;
   margin: 20px auto;
-  padding: 10px 16px;
-  color: #010101;
+  padding: 6px 14px;
+  color: #f9f9f9;
+  font-weight: 200;
   border: 1px solid #010101;
   border-radius: 2px;
-  font-size: 20px;
+  font-size: 18px;
   background-color: rgba(26, 33, 69, 0);
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
   button:hover {
-    background-color: rgba(26, 33, 69, 0.4);
-    color: #020202;
+    background-color: rgba(26, 33, 69, 0.6);
     border: 1px solid #020202; }
 
 html {
@@ -135,23 +139,24 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #1a2145; }
+  background-color: rgba(20, 28, 60, 0.7); }
 
 nav {
   max-width: 920px;
   height: 56px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  display: table; }
 
 .logo {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center; }
+  display: table-cell;
+  vertical-align: middle; }
 
 article {
   margin: 16px 0;
   padding: 10px;
   border: 2px solid #080a19;
+  background-color: rgba(26, 33, 69, 0.2);
   border-radius: 2px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
@@ -165,9 +170,16 @@ article {
   display: block; }
 
 #search {
-  margin: 150px 0 80px;
   text-align: center;
-  margin: 400px, auto, 200px; }
+  margin: 400px, auto, 200px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+
+.moveBottom {
+  margin: 150px 0 80px; }
+
+.moveTop {
+  margin: 30px 0; }
 
 input[type=text] {
   width: 90%;
@@ -175,7 +187,7 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid #080a19;
   font-size: 26px;
-  color: white;
+  color: #f9f9f9;
   font-family: "Open Sans";
   font-weight: 400;
   background-color: #242c5d;

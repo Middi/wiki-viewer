@@ -20,7 +20,7 @@ function request(search) {
 					title[i] = response.query.search[i].title;
 					urlWiki[i] = 'https://en.wikipedia.org/wiki/' + response.query.search[i].title;
 
-					$("#results").append('<article class="posts"><h2><a href="https://en.wikipedia.org/wiki/' + title + '">' + title[i] + '</a></h2><p>' + snippet[i] + '</p></article>');
+					$("#results").append('<a href="https://en.wikipedia.org/wiki/' + title + '"><article class="posts"><h2>' + title[i] + '</h2><p>' + snippet[i] + '</p></article></a>');
 
 				}
 
@@ -47,6 +47,9 @@ $("input").on("keydown", function search(e) {
 		$("#results").html("");
 
 		request(search);
+
+			$( ".moveBottom" ).toggleClass( "moveTop" );
+		
 	} else {}
 	}
 });
