@@ -1,47 +1,68 @@
 var snippet = [];
-var title =[];
+var title = [];
 var urlWiki = [];
 
-function request() {
+
+function request(search) {
+
 	$.ajax({
-		url: "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=radiohead&prop=info&inprop=url&utf8=&format=json",
+		url: "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + search + "&prop=info&inprop=url&utf8=&format=json",
 		dataType: "jsonp",
-		success: function(response) {
+		success: function (response) {
+
 			if (response.query.searchinfo.totalhits === 0) {
-				showError(keyword);
+
 			} else {
 
 				for (var i = 0; i < response.query.search.length; i++) {
-			
-					
-					snippet.push(response.query.search[i].snippet);
-					title.push(response.query.search[i].title);
-					urlWiki.push('https://en.wikipedia.org/wiki/' + response.query.search[i].title);
-					
-			console.log(title);
-					
-					// var result = store.slice(1, -1);
-					$('.end-div').before('<article><h2><a href="https://en.wikipedia.org/wiki/' + title + '">' + title[i] +'</a></h2><p>' + snippet[i] + '</p></article>');
-					
-					
-					// $('container').html("<article><p>" + store[i] + "</p></article>");
-// console.log(response.query.search[i].snippet);
+
+					snippet[i] = response.query.search[i].snippet;
+					title[i] = response.query.search[i].title;
+					urlWiki[i] = 'https://en.wikipedia.org/wiki/' + response.query.search[i].title;
+
+					$("#results").append('<article class="posts"><h2><a href="https://en.wikipedia.org/wiki/' + title + '">' + title[i] + '</a></h2><p>' + snippet[i] + '</p></article>');
+
 				}
 
 			}
 		},
-		error: function() {
+		error: function () {
 			alert("Error retrieving search results, please refresh the page");
 		}
+
 	});
 
 }
 
-$('.celsius').on('click', function() {
-	request();
+
+
+$("input").on("keydown", function search(e) {
+
+	if (e.keyCode === 13) {
+		if (search !== "") {
+
+		var search = $("input").val();
+
+
+		$("#results").html("");
+
+		request(search);
+	} else {}
+	}
 });
 
-// New quote on start
-$(document).ready(function() {
-	request();
+
+$(".result-btn").click(function (event) {
+	event.preventDefault();
+
+	if (search !== "") {
+
+		var search = $("input").val();
+
+
+		$("#results").html("");
+
+		request(search);
+	} else {}
+
 });

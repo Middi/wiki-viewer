@@ -18,20 +18,22 @@ h1 {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #fbfbfb; }
+  color: #cf7c7a; }
 
 h1 span {
-  color: #1f1f1f;
+  color: #cf7c7a;
   font-weight: 700; }
 
-h2, a {
+h2,
+a {
   font-size: 1.8em;
   font-family: "Open Sans";
   font-weight: 400;
-  color: #862bab;
+  color: #cf7c7a;
   padding-bottom: 6px; }
 
-h2, a span {
+h2,
+a span {
   color: #1f1f1f;
   font-weight: 700; }
 
@@ -39,14 +41,14 @@ p {
   font-size: 1.2em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #2f2f2f;
+  color: #f9f9f9;
   padding-bottom: 15px; }
   p strong {
-    color: #2e2e2e; }
+    color: #f9f9f9; }
 
 p span {
   font-family: helvetica;
-  color: #444;
+  color: #f9f9f9;
   font-size: 1.2em;
   font-weight: 400; }
 
@@ -89,6 +91,22 @@ i {
   font-size: 12px;
   color: #fc2d23; }
 
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 16px;
+  color: #010101;
+  border: 1px solid #010101;
+  border-radius: 2px;
+  font-size: 20px;
+  background-color: rgba(26, 33, 69, 0);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  button:hover {
+    background-color: rgba(26, 33, 69, 0.4);
+    color: #020202;
+    border: 1px solid #020202; }
+
 html {
   height: 100%;
   box-sizing: border-box; }
@@ -102,7 +120,8 @@ body {
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: #232b5e; }
 
 main {
   margin: 0 auto;
@@ -113,40 +132,31 @@ main {
 header {
   height: 56px;
   width: 100%;
-  background: #862bab;
-  border-bottom: 1px solid #bbb;
-  box-shadow: 0 2px 6px -4px #999;
   position: fixed;
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+  background-color: #1a2145; }
 
 nav {
   max-width: 920px;
   height: 56px;
   margin: 0 auto;
-  padding: 0 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  text-align: center; }
 
 .logo {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center; }
 
-.container {
-  max-width: 920px;
-  margin: 100px auto 10px;
-  padding: 20px 0;
-  text-align: center; }
-
 article {
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px; }
+  margin: 16px 0;
+  padding: 10px;
+  border: 2px solid #080a19;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  article:hover {
+    background-color: rgba(26, 33, 69, 0.6); }
 
 .hidden {
   display: none; }
@@ -154,8 +164,60 @@ article {
 .visible {
   display: block; }
 
+#search {
+  margin: 150px 0 80px;
+  text-align: center;
+  margin: 400px, auto, 200px; }
+
+input[type=text] {
+  width: 90%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #080a19;
+  font-size: 26px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  background-color: #242c5d;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png");
+  background-size: 40px, 40px;
+  background-position: -5px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  text-transform: uppercase; }
+
+input[type=text]:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #080a19; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #cf7c7a;
+  text-transform: capitalize;
+  padding: 5px 2px 2px 0px; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cf7c7a;
+  opacity: 1;
+  text-transform: capitalize; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cf7c7a;
+  opacity: 1;
+  text-transform: capitalize; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cf7c7a;
+  text-transform: capitalize; }
+
 footer {
-  background: #1f2022;
+  background: #1a2046;
   display: table;
   width: 100%;
   text-align: center;
