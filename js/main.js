@@ -11,7 +11,7 @@ function request(search) {
 		success: function (response) {
 
 			if (response.query.searchinfo.totalhits === 0) {
-$("#results").append('<article class="posts"><h2>No Results Found.</h2></article>');
+$("#results").append('<article class="posts"><h3>No Results Found.</h3></article>');
 			} 
 			else {
 

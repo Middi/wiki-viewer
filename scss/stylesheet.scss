@@ -37,10 +37,9 @@ a {
 	font-family: "Open Sans";
 	font-weight: 200;
 	color: rgba(207, 124, 122, 1.0);
-	padding-bottom: 6px;
-    &:hover {
-        text-decoration: none;
-    }
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 h2,
@@ -50,16 +49,27 @@ a span {
 }
 
 .fa-free-code-camp {
-color: rgba(207, 124, 122, 1.0);
-padding: 0 5px 0 0;
+	color: rgba(207, 124, 122, 1.0);
+	padding: 0 5px 0 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	font-family: "Open Sans";
+	font-weight: 200;
+	color: rgba(207, 124, 122, 1.0);
+	padding-bottom: 6px;
+	text-align: center;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: "Open Sans";
 	font-weight: 200;
 	color: #f9f9f9;
-	padding-bottom: 15px;
 	strong {
 		color: #f9f9f9;
 	}
@@ -105,7 +115,7 @@ strong {
 	text-decoration: none;
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
-    font-weight:200;
+	font-weight: 200;
 }
 
 a:hover {
@@ -121,12 +131,13 @@ i {
 	color: #fc2d23;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
 	display: inline;
 	margin: 20px 10px;
 	padding: 6px 14px;
 	color: #f9f9f9;
-    font-weight: 200;
+	font-weight: 200;
 	border: 1px solid rgba(1, 1, 1, 1.0);
 	border-radius: 2px;
 	font-size: 18px;
@@ -173,6 +184,7 @@ header {
 	top: 0;
 	z-index: 10;
 	background-color: rgba(20, 28, 60, 0.7);
+	border-bottom: 2px solid rgba(8, 10, 25, 0.2);
 }
 
 nav {
@@ -180,7 +192,7 @@ nav {
 	height: 56px;
 	margin: 0 auto;
 	text-align: center;
-    display: table;
+	display: table;
 }
 
 .logo {
@@ -188,20 +200,18 @@ nav {
 	vertical-align: middle;
 }
 
-
 article {
 	margin: 16px 0;
 	padding: 10px;
-    border: 2px solid rgba(8, 10, 25, 1.0);
+	border: 2px solid rgba(8, 10, 25, 1.0);
 	background-color: rgba(26, 33, 69, 0.2);
-    border-radius: 2px;
+	border-radius: 2px;
 	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease; 
-	word-break: break-all;
-    &:hover {
-
-	background-color: rgba(26, 33, 69, 0.6);
-    }
+	transition: all 0.4s ease;
+	overflow-wrap: break-word;
+	&:hover {
+		background-color: rgba(26, 33, 69, 0.6);
+	}
 }
 
 .hidden {
@@ -221,11 +231,11 @@ article {
 }
 
 .moveBottom {
-    margin: 150px 0 80px;
+	margin: 150px 0 80px;
 }
 
 .moveTop {
-	margin:30px 0;
+	margin: 30px 0;
 }
 
 input[type=text] {
@@ -237,7 +247,7 @@ input[type=text] {
 	color: #f9f9f9;
 	font-family: "Open Sans";
 	font-weight: 400;
-	background-color: rgba(36, 44, 93, 1.0);
+	background-color: rgba(36, 44, 93, 0.1);
 	background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
 	background-size: 40px, 40px;
 	background-position: -5px 10px;
@@ -281,6 +291,10 @@ input[type=text]:focus {
 	text-transform: capitalize;
 }
 
+input {
+	-webkit-appearance: none;
+}
+
 footer {
 	background: rgba(26, 32, 70, 1.0);
 	display: table;
@@ -307,4 +321,14 @@ footer {
 
 /* -- BREAK 1 -- */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+	h2 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 0.9em;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+}

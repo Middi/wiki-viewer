@@ -29,8 +29,7 @@ a {
   font-size: 1.8em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #cf7c7a;
-  padding-bottom: 6px; }
+  color: #cf7c7a; }
   h2:hover,
   a:hover {
     text-decoration: none; }
@@ -44,12 +43,21 @@ a span {
   color: #cf7c7a;
   padding: 0 5px 0 0; }
 
-p {
-  font-size: 1.2em;
+h3 {
+  font-size: 1.6em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #f9f9f9;
-  padding-bottom: 15px; }
+  color: #cf7c7a;
+  padding-bottom: 6px;
+  text-align: center; }
+  h3:hover {
+    text-decoration: none; }
+
+p {
+  font-size: 1.1em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: #f9f9f9; }
   p strong {
     color: #f9f9f9; }
 
@@ -99,7 +107,8 @@ i {
   font-size: 12px;
   color: #fc2d23; }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   display: inline;
   margin: 20px 10px;
   padding: 6px 14px;
@@ -112,7 +121,8 @@ button, input[type=submit] {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   cursor: pointer; }
-  button:hover, input[type=submit]:hover {
+  button:hover,
+  input[type=submit]:hover {
     background-color: rgba(26, 33, 69, 0.6);
     border: 1px solid #020202; }
 
@@ -144,7 +154,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: rgba(20, 28, 60, 0.7); }
+  background-color: rgba(20, 28, 60, 0.7);
+  border-bottom: 2px solid rgba(8, 10, 25, 0.2); }
 
 nav {
   max-width: 920px;
@@ -165,7 +176,7 @@ article {
   border-radius: 2px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  word-break: break-all; }
+  overflow-wrap: break-word; }
   article:hover {
     background-color: rgba(26, 33, 69, 0.6); }
 
@@ -196,7 +207,7 @@ input[type=text] {
   color: #f9f9f9;
   font-family: "Open Sans";
   font-weight: 400;
-  background-color: #242c5d;
+  background-color: rgba(36, 44, 93, 0.1);
   background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png");
   background-size: 40px, 40px;
   background-position: -5px 10px;
@@ -234,6 +245,9 @@ input[type=text]:focus {
   color: #cf7c7a;
   text-transform: capitalize; }
 
+input {
+  -webkit-appearance: none; }
+
 footer {
   background: #1a2046;
   display: table;
@@ -254,3 +268,10 @@ footer {
 =                 MEDIA QUERIES               =
 =============================================*/
 /* -- BREAK 1 -- */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5em; }
+  p {
+    font-size: 0.9em; }
+  h3 {
+    font-size: 1.2em; } }
