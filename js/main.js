@@ -1,3 +1,9 @@
+// -- Focus Search Input --- //
+
+window.onload = function() {
+ $(".search").focus();
+};
+
 // --- Variables --- //
 
 var snippet = [];
