@@ -35,7 +35,7 @@ h2,
 a {
 	font-size: 1.8em;
 	font-family: "Open Sans";
-	font-weight: 400;
+	font-weight: 200;
 	color: rgba(207, 124, 122, 1.0);
 	padding-bottom: 6px;
     &:hover {
@@ -47,6 +47,11 @@ h2,
 a span {
 	color: rgba(207, 124, 122, 1.0);
 	font-weight: 700;
+}
+
+.fa-free-code-camp {
+color: rgba(207, 124, 122, 1.0);
+padding: 0 5px 0 0;
 }
 
 p {
@@ -125,7 +130,7 @@ button {
 	border: 1px solid rgba(1, 1, 1, 1.0);
 	border-radius: 2px;
 	font-size: 18px;
-	background-color: rgba(26, 33, 69, 0);
+	background-color: rgba(26, 33, 69, 0.2);
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
 	&:hover {
@@ -190,7 +195,8 @@ article {
 	background-color: rgba(26, 33, 69, 0.2);
     border-radius: 2px;
 	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+	transition: all 0.4s ease; 
+	word-break: break-all;
     &:hover {
 
 	background-color: rgba(26, 33, 69, 0.6);

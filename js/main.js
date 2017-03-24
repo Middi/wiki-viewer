@@ -48,7 +48,7 @@ $("input").on("keydown", function search(e) {
 
 		request(search);
 
-			$( ".moveBottom" ).toggleClass( "moveTop" );
+			$( ".moveBottom" ).addClass( "moveTop" );
 		
 	} else {}
 	}
@@ -66,6 +66,8 @@ $(".result-btn").click(function (event) {
 		$("#results").html("");
 
 		request(search);
+
+			$( ".moveBottom" ).addClass( "moveTop" );
 	} else {}
 
 });

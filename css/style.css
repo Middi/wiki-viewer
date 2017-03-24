@@ -28,7 +28,7 @@ h2,
 a {
   font-size: 1.8em;
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 200;
   color: #cf7c7a;
   padding-bottom: 6px; }
   h2:hover,
@@ -39,6 +39,10 @@ h2,
 a span {
   color: #cf7c7a;
   font-weight: 700; }
+
+.fa-free-code-camp {
+  color: #cf7c7a;
+  padding: 0 5px 0 0; }
 
 p {
   font-size: 1.2em;
@@ -104,7 +108,7 @@ button {
   border: 1px solid #010101;
   border-radius: 2px;
   font-size: 18px;
-  background-color: rgba(26, 33, 69, 0);
+  background-color: rgba(26, 33, 69, 0.2);
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
   button:hover {
@@ -159,7 +163,8 @@ article {
   background-color: rgba(26, 33, 69, 0.2);
   border-radius: 2px;
   -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  word-break: break-all; }
   article:hover {
     background-color: rgba(26, 33, 69, 0.6); }
 
